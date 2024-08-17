@@ -1,0 +1,41 @@
+:root {
+  --bg-color: #EADBC8;
+  --line-color: #DAC0A3;
+  --outline-color: #baa;
+  --caret-color: #102C57;
+  --vert-line-color: rgb(152, 65, 65);
+  --hor-offset: 50px;
+  --active-color: #fff7ec;
+  --active-outline-color: #cbb;
+}
+
+#notepad {
+  /* making the textarea work */
+  font-family: inherit;
+  font-size: x-large;
+  line-height: 1.25em;
+  margin: 0;
+  border: #cbb solid 2px;
+  border-top: none;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  resize: none;
+  flex: 1 1 auto;
+  padding: 0 5px;
+  padding-left: calc(5px + var(--hor-offset));
+  white-space: pre-wrap;
+  outline: none;
+
+  /* Making the textarea look nice*/
+  background:
+    linear-gradient(to right,
+      rgba(255, 255, 255, 0) 0 calc(var(--hor-offset) - 0.15em),
+      var(--vert-line-color) calc(var(--hor-offset) - 0.15em) calc(var(--hor-offset) - 0.05em),
+      rgba(255, 255, 255, 0) calc(var(--hor-offset) - 0.05em)) no-repeat top padding-box,
+    repeating-linear-gradient(to bottom,
+      var(--bg-color) 0 1.15em,
+      var(--line-color) 1.15em 1.25em) repeat padding-box;
+  background-attachment: local;
+  caret-color: var(--caret-color);
+}

@@ -1,0 +1,113 @@
+.file {
+  min-width: 100px;
+  height: 30px;
+  display: inline-block;
+  position: relative;
+  margin: 0 45px;
+}
+
+.file:first-child {
+  margin-left: -4px;
+}
+
+.file:last-child {
+  margin-right: 0px;
+}
+
+.file-content {
+  border-bottom: 30px solid var(--bg-color);
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  position: absolute;
+  height: 0;
+  width: 150px;
+  margin: 0 10px;
+  display: flex;
+  justify-content: space-evenly;
+  bottom: 0px;
+  transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+  z-index: 2;
+}
+
+.file-outline {
+  border-bottom: 36px solid var(--outline-color);
+  border-left: 18px solid transparent;
+  border-right: 18px solid transparent;
+  position: absolute;
+  height: 0;
+  width: 156px;
+  bottom: 0px;
+  left: 4px;
+  transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+  z-index: 1;
+}
+
+.active-file .file-content {
+  border-bottom-color: var(--active-color);
+  z-index: 4;
+}
+
+.active-file .file-outline {
+  border-bottom-color: var(--active-outline-color);
+  z-index: 3;
+}
+
+.file:hover .file-content {
+  border-bottom-width: 36px;
+  border-left-width: 18px;
+  border-right-width: 18px;
+
+}
+
+.file:hover .file-outline {
+  border-bottom-width: 42px;
+  border-left-width: 21px;
+  border-right-width: 21px;
+}
+
+.file-name-edit,
+.file-name-display {
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+  width: 70%;
+  height: 20px;
+  font-size: 20px;
+  position: relative;
+  top: 4px;
+  padding: 2px;
+  margin: 0;
+  background-color: transparent;
+  border: none;
+  line-height: normal;
+}
+
+.file-name-display {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.file-close {
+  position: relative;
+  top: 5px;
+  height: 2ex;
+  width: 2ex;
+  font-size: 20px;
+  text-align: center;
+  padding: 0;
+  padding-bottom: 1px;
+  margin: 0;
+  line-height: 0px;
+  background-color: var(--bg-color);
+  border: var(--line-color) solid 2px;
+}
+
+.file-close:hover {
+  background-color: var(--line-color)
+}

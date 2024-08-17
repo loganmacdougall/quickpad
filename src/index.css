@@ -1,0 +1,50 @@
+:root {
+  line-height: 1.5;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+html {
+  margin: 0;
+  min-width: 100svw;
+  min-height: 100svh;
+}
+
+body {
+  margin: 0;
+  min-width: inherit;
+  min-height: inherit;
+  display: flex;
+  justify-content: center;
+  background-color: #555;
+}
+
+/* Scroll Bar Styles */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #cbb;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #988;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #766;
+}
+
+::-webkit-scrollbar-corner {
+  background: #766;
+}

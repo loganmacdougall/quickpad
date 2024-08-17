@@ -1,0 +1,13 @@
+#root {
+  font-family: 'Ubuntu Mono', monospace;
+
+  height: calc(100svh - 20px);
+  width: calc(100svw - 40px);
+
+  display: flex;
+  flex-direction: column;
+
+  margin: 0;
+  padding: 0;
+
+}
