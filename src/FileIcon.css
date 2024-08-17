@@ -104,6 +104,7 @@
   padding-bottom: 1px;
   margin: 0;
   line-height: 0px;
+  color: black;
   background-color: var(--bg-color);
   border: var(--line-color) solid 2px;
 }
